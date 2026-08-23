@@ -1,19 +1,23 @@
-# Order Total Calculator
+# Weighted Total Calculator
 
-A simple Python script that calculates the total cost of an order, including tax, from a list of item prices.
+A reusable Python pattern for summing a list of values and applying a percentage on top, shown across two examples.
+
+## Files
+- **order_calculator.py** — order total with tax applied
+- **payroll_calculator.py** — payroll total with a bonus/commission applied
 
 ## How it works
-- Takes a list of item prices and sums them for the subtotal
-- Applies a tax rate to the subtotal
-- Returns the final total (subtotal + tax)
+- Takes a list of values and sums them for the subtotal
+- Applies a percentage rate (tax, bonus, etc.) to the subtotal
+- Returns the final total (subtotal + percentage amount)
 
 ## How to run
 ```bash
 python order_calculator.py
+python payroll_calculator.py
 ```
-The script currently uses a sample order (3 items) and a 7% tax rate. Edit the `order_prices` and `tax` variables to test different values.
 
 ## What I learned
-- Writing a reusable function with parameters (`item_prices`, `tax_rate`)
+- Writing a reusable function with parameters for a list and a rate
 - Using Python's built-in `sum()` on a list
-- Formatting currency output with f-strings (`:.2f`)
+- Recognizing the same "sum + percentage" pattern applies across different contexts (retail tax, payroll bonuses)
